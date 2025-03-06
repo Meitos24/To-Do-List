@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #171718;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #1f2124;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #393d42;
+}
+
+.header-table th{
+    text-align: center;
+}
+
+.book-table td {
+    text-align: center;
+}
+
+.task-row {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #f3f3f3;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.book-list,
+.add-book {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: #212529;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #212529;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #495057;
+}
+
+table th {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+table td {
+    color: #e0e0e6;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+
+.btn-add {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    border-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-add:hover,
+.btn-add:hover {
+    border-color: #60d7ff;
+    color: #60d7ff;
+    box-shadow: 0 0.5em 0.5em -0.4em #60d7ff;
+    -webkit-transform: translateY(-0.25em);
+        transform: translateY(-0.25em);
+    
+}
+
+form {
+    display: flex;
+    gap: 1rem;
+}
+
+form input {
+    padding: 0.5rem;
+    border: 1px solid #495057;
+    border-radius: 5px;
+    background-color: #1f2124;
+    color: #ffffff;
+    outline: none;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #b3b3c5;
+}
+
+form button {
+    flex-shrink: 0;
+}
+
+
+.task-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre formulario y columnas */
+    margin-top: 20px;
+}
+
+.add-task {
+    width: 25%;
+}
+
+.task-container {
+    display: flex;
+    gap: 15px;
+    width: 75%;
+}
+
+.column {
+    flex: 1;
+    min-height: 300px;
+    background: #171718;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    border: 2px solid #393d42;
+
+}
+
+.task-container  h2{
+    font-size: 25px;
+}

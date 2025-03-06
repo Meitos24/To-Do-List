@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'webapp/style.css' %}"/>
+    <title>To-Do List</title>
+</head>
+<body>
+    <header class="header">
+        <h1>To-Do List</h1>
+    </header>
+
+    <main class="main">
+    <section class="task-section">
+        <!-- Formulario para añadir tarea -->
+        <div class="add-task">
+            <h2>Añadir tarea</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Título de la tarea" required>
+                <button type="submit" class="btn-add">Añadir</button>
+            </form>
+        </div>
+
+        <!-- Contenedor de columnas de prioridad -->
+        <div class="task-container">
+            <div class="column" id="pending">
+                <h2>Pendiente</h2>
+            </div>
+            <div class="column" id="high-priority">
+                <h2>Alta Prioridad</h2>
+            </div>
+            <div class="column" id="medium-priority">
+                <h2>Media Prioridad</h2>
+            </div>
+            <div class="column" id="low-priority">
+                <h2>Baja Prioridad</h2>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <script src="{% static 'webapp/script.js' %}"></script>
+</body>
+</html>

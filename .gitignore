@@ -1,0 +1,27 @@
+# Entorno virtual (NO subir)
+venv/
+myenv/
+.env
+
+# Archivos de configuración sensibles
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+*.sqlite3
+*.log
+
+# Configuración del editor
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Dependencias de Python
+*.egg-info/
+dist/
+build/
+
+# Archivos de despliegue
+*.pid
+*.tar.gz
+*.z
